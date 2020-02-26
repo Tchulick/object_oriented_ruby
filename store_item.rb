@@ -59,9 +59,9 @@ class Dragon
   end
 end
 
-dragon = Dragon.new({ :color => "red", :size => 20, :price => 150000 })
+dragon = Dragon.new({ :color => "red", :size => 20, :price => 150000 :name => "Smaug" })
 
-fish = Fish.new({ color: "blue", size: 5, price: 8 })
+fish = Fish.new( color: "blue", size: 5, price: 8 )
 
 fish.info
 fish.color
