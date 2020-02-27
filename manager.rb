@@ -39,8 +39,11 @@ class Manager < Employee
   end
 
   def give_all_raises
-    @employees[0].give_annual_raise
-    @employees[1].give_annual_raise
+    i = 0
+    while i < @employees.length
+      @employees[i].give_annual_raise
+      i += i
+    end
   end
 
   def send_report
@@ -55,3 +58,4 @@ manager.print_info
 manager.send_report
 # p manager
 manager.give_all_raises
+p manager
